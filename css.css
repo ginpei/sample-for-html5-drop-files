@@ -1,0 +1,26 @@
+#dropzone {
+	background-color: #cfc;
+	border: solid 3px #9c9;
+	color: #9c9;
+	min-height: 50px;
+	padding: 20px;
+	text-shadow: 1px 1px 0 #fff;
+}
+#dropzone.dropover {
+	background-color: #cff;
+	color: #9cc;
+}
+
+#files:empty::before {
+	color: #ccc;
+	content: "(Files data will be shown here.)";
+}
+#files img {
+	border: solid 1px #ccc;
+	cursor: pointer;
+	height: auto;
+	margin: 0 10px;
+	max-height: 128px;
+	max-width: 128px;
+	width: auto;
+}
