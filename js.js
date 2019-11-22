@@ -57,7 +57,7 @@
 	function buildElFile(file) {
 		var elFile = document.createElement('li');
         var extension = file.name.substring(file.name.lastIndexOf('.') + 1);
-        var text = file.name + ' (' + ((file.type) ? file.type : extension) +',' + file.size + 'bytes)';
+        var text = file.name + ' (' + ( file.type ? file.type : extension) +',' + file.size + 'bytes)';
 		elFile.appendChild(document.createTextNode(text));
 
         if (file.type.indexOf('image/') === 0) {
